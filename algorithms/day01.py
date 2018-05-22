@@ -36,4 +36,4 @@ print(sum3(10))
 def sum4(n):
   return n*(n+1)*(2*n+1) // 6
 
-print(sum4(10)) 
+print(sum4(10))
