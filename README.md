@@ -1,2 +1,0 @@
-# Python
-fastcampus_python
