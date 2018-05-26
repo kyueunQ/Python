@@ -23,5 +23,3 @@ def move_tower(n, start_pole, end_pole, sub_pole):
 move_tower(3, 1, 3, 2)
 print("------------------")
 move_tower(7, 1, 3, 2)
-
-
