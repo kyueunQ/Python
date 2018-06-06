@@ -29,3 +29,35 @@ v = [55, 33, 13, 46, 82, 28]
 print(sort_insert(v))
 
 
+
+# 두번째 방법
+# 기존 배열을 재배열하기
+def sort_ins(a):
+  n = len(a)
+  for i in range(1, n):
+    x = a[i]
+    j = i - 1
+    while j >= 0 and x < a[j]:
+      a[j + 1] = a[j]
+      j -= 1
+    a[j + 1] = x
+
+arr = [33, 76, 29, 11, 58, 99]
+sort_ins(arr)
+print(arr)
+
+
+# 응용. 삽입정렬 내림차순
+def sort_ins2(a):
+  n = len(a)
+  for i in range(1, n):
+    x = a[i]
+    j = i - 1
+    while j >= 0 and x > a[j]:
+      a[j + 1] = a[j]
+      j -= 1
+    a[j + 1] = x
+
+arr = [33, 76, 29, 11, 58, 99]
+sort_ins2(arr)
+print(arr)
